@@ -18,11 +18,10 @@ public class MyStepdefs {
         calculator = new Calculator();
     }
     @Given("^Three input values, (\\d+) and (\\d+) and \"([^\"]*)\"$")
-    public void threeInputValuesAndAnd(int arg0, int arg1, String arg2) throws Throwable {
+    public void threeInputValuesAndAnd(int arg0, int arg1, String arg2){
         opt = arg2;
         value1 = arg0;
         value2 = arg1;
-        throw new PendingException();
     }
     @When("^I operate the two values$")
     public void iOperateTheTwoValues() {
